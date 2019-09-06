@@ -1,0 +1,5 @@
+<app-tableau [headers]="headers">
+    <!-- template projeté dans tableauComponent.html -->
+    <app-item-client *ngFor="let obj of collection" [item]="obj" (doChange)="changeState($event)">
+    </app-item-client>
+   </app-tableau>
